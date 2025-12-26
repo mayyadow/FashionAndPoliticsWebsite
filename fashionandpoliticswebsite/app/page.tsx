@@ -1,11 +1,26 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import Image from "next/image"; 
+import FeaturedCarousel from "@/components/FeaturedCarousel"; 
+
+export default function HomePage() {
   return (
-    <section className = "relative min-h-screen overflow-hidden">
-      <h1 className = "font-helvetica uppercase tracking-[0.25em] text-4xl mt-20 text-black">
-          About Us 
-      </h1>
-    </section>
-  );
+    <div className="relative">
+      <section className="relative h-[70vh] bg-[#E9E9E9E9]">
+        <div className="absolute inset-8 border border-black"/>
+
+          <Image 
+            src="/images/model1.jpg"
+            alt="Model"
+            width={380}
+            height={520}
+            className="absolute top-24 right-12 object-cover"
+          />
+      </section>
+
+    <div className="mt-12 px-8">
+      <FeaturedCarousel />
+    </div>
+  </div>
+  )
 }
