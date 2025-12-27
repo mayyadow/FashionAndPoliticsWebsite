@@ -5,22 +5,37 @@ import FeaturedCarousel from "@/components/FeaturedCarousel";
 
 export default function HomePage() {
   return (
-    <div className="relative">
-      <section className="relative h-[70vh] bg-[#E9E9E9E9]">
-        <div className="absolute inset-8 border border-black"/>
+    <div className="relative px-8 py-10 page-transition">
+      <section className="grid gap-10 md:grid-cols-2 items-start">
+        <div className="relative h-[70vh] ">
+      
 
           <Image 
-            src="/images/model1.jpg"
+            src="/images/model2.png"
             alt="Model"
-            width={380}
-            height={520}
-            className="absolute top-24 right-12 object-cover"
+            width={600}
+            height={600}
+            className="left-0 object-cover object-bottom"
           />
-      </section>
+        </div>
+        <div className="flex flex-col justify-between h-[70vh]">
+          <div>
+          <Image
+            src="/images/logo.png"
+            alt="UofT Fashion and Politics Club Logo"
+            width={600}
+            height={600}
+            className="object-contain"
+            />
+          </div>
 
-    <div className="mt-12 px-8">
-      <FeaturedCarousel />
-    </div>
+              <div className="mt-12 px-8 justify-center">
+                <FeaturedCarousel />
+              </div>
+            
+            </div>
+          </section>
+
   </div>
   )
 }

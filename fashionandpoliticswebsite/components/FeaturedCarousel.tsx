@@ -20,9 +20,17 @@ export default function FeaturedCarousel() {
     }, []);
 
     return (
-        <section className="absolute-bottom-20 right-8 w-[380px] bg-black text-white p-8">
-            <h2 className="text-2xl font-semibold">{current.title}</h2>
-            <p className="mt-2">{current.excerpt}</p>
+        <section className="absolute-bottom-20 right-8 w-full max-w-lg shadow-lg bg-black text-white p-8">
+
+            <div className="overflow-hidden">
+                <div className="flex transition-transform duration-500 ease-out" style = {{ transform: `translateX(-${index * 100}%)` }}>
+                    {articles.map((article, i) => (
+                        <div key={i} className="shrink-0 w-full flex flex-col gap-3">
+                    <h2 className="text-2xl font-semibold text-[#ffcfec]">{current.title}</h2>
+                    <p className="mt-2">{current.excerpt}</p>
+                </div>
+            ))}
+            </div>
 
         <div className="flex gap-3 mt-4">
             {articles.map((_, i) =>(
@@ -34,6 +42,7 @@ export default function FeaturedCarousel() {
                 />
             ))}
         </div>
+            </div>
         </section>
     );
 }

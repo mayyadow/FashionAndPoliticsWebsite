@@ -30,15 +30,15 @@ export default function RootLayout({
       <body
         className="bg-[var(--grey)] text-[var(--black)]">
           <div className="min-h-screen flex">
-            <aside className="w-40 border-r border-black flex flex-col justify-between py-10 px-6 text-[0.7rem] tracking-[0.25em]">
-              <nav className="space-y-6">
-                <Link href="/" className="block hover:opacity-60">
+            <aside className="w-40 border-r border-black flex flex-col justify-between py-50 px-6 text-[1.5rem] tracking-[0.25em]">
+              <nav className="space-y-15">
+                <Link href="/" className="block hover:text-[var(--pink)]">
                   HOME
                 </Link>
-                <Link href="/about" className="block hover:opacity-60">
+                <Link href="/about" className="block hover:text-[var(--pink)]">
                   ABOUT
                 </Link>
-                <Link href="/blog" className="block hover:opacity-60">
+                <Link href="/blog" className="block hover:text-[var(--pink)]">
                   BLOG
                 </Link>
               </nav>

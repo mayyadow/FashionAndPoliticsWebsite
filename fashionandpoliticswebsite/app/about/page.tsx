@@ -1,6 +1,6 @@
 export default function AboutPage() {
     return (
-        <section className="relative h-screen">
+        <section className="relative h-screen page-transition">
             <div className="absolute inset-y-0 left-0 w-[55%]">
                 <div className="h-full bg-black text-white flex items-center justify-center text-[0.7rem] tracking-[0.15em]">
                     LARGE BLACK AND WHITE IMAGE AREA
