@@ -26,7 +26,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en"
+      className={`${dm_sans.variable} ${anton.variable}`} 
+    >
       <body
         className="bg-[var(--grey)] text-[var(--black)]">
           <div className="min-h-screen flex">
