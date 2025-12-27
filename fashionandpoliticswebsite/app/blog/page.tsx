@@ -19,7 +19,7 @@ const samplePost: BlogPost = {
 
 export default function BlogPage() {
     return (
-        <section className="relative h-screen flex">
+        <section className="relative h-screen flex page-transition">
             <div className="flex-1 flex items-center justify-center">
                 <article className="bg-white max-w-xl w-full p-10 shadow-[6px_6px_0px_0px_rgba(0,0,0,0.8)]">
                     <header className="mb-4">

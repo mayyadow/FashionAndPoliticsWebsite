@@ -23,4 +23,11 @@
     "tailwindcss": "^4",
     "typescript": "^5"
   }
+,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
 }

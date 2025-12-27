@@ -3,7 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --pink: #f4b7d8;
+  --pink: #ff1fa9;
+  --lightpink: #ffcfec;
   --grey: #d2d2d2;
 }
 
@@ -35,4 +36,21 @@ body {
 
 .font-anton{
   font-family: var(--font-anton); 
+}
+
+@keyframes page-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@layer utilities {
+  .page-transition {
+    animation: page-fade-up 0.25s ease-out;
+  }
 }
