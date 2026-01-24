@@ -22,7 +22,7 @@ export default function Header({ articleName, author, date }: Props) {
 "
     >
       {/* bg image */}
-      <div className="relative z-10 mt-10 ml-10 mr-10 mb-10 md:mt-20 md:ml-40 md:mr-40 md:mb-20 size text-xl">
+      <div className="relative z-10 mt-10 mx-20 mb-10 md:mt-20 md:mx-50 md:mb-20 size text-xl">
         <ArticleTitle articleName={articleName} author={author} date={date} />
       </div>
     </header>
