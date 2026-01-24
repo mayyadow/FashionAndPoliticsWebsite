@@ -11,7 +11,7 @@ const dm_sans = DM_Sans({
 
 const anton = Anton({
   subsets: ["latin"],
-  weight: "400", 
+  weight: "400",
   variable: "--font-anton",
 });
 
@@ -27,10 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className="bg-[var(--grey)] text-[var(--black)]">
-          <div className="min-h-screen flex">
-            <aside className="w-40 border-r border-black flex flex-col justify-between py-50 px-6 text-[1.5rem] tracking-[0.25em]">
+      <body className="bg-[var(--grey)] text-[var(--black)]">
+        <div className="min-h-screen flex">
+          {/* <aside className="w-40 border-r border-black flex flex-col justify-between py-50 px-6 text-[1.5rem] tracking-[0.25em]">
               <nav className="space-y-15">
                 <Link href="/" className="block hover:text-[var(--pink)]">
                   HOME
@@ -47,12 +46,10 @@ export default function RootLayout({
                 UofT<br />
                 Fashion + Politics
               </div>
-            </aside>
+            </aside> */}
 
-            <main className="flex-1 relative overflow-hidden">
-              {children}
-            </main>
-          </div>
+          <main className="flex-1 relative overflow-hidden">{children}</main>
+        </div>
       </body>
     </html>
   );
