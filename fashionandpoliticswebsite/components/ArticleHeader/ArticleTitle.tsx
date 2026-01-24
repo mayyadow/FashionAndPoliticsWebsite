@@ -11,7 +11,7 @@ export default function ArticleTitle({ articleName, author, date }: Props) {
     <>
       <h1
         style={{ color: "#FFFFFF" }}
-        className="font-helvetica text-[40px] md:text-[51px] font-bold wrap-break-words"
+        className="font-helvetica text-[25px] md:text-[51px] font-bold wrap-break-words"
       >
         {articleName}
       </h1>
@@ -19,7 +19,7 @@ export default function ArticleTitle({ articleName, author, date }: Props) {
       <h2
         style={{ color: "#ffcfec" }}
         color="#ffcfec"
-        className="font-helvetica text-[20px] md:text-[31px]"
+        className="font-helvetica text-[14px] md:text-[31px]"
       >
         BY: {author} <br></br> {date}{" "}
       </h2>
