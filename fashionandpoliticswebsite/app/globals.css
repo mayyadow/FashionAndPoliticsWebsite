@@ -8,6 +8,15 @@
   --grey: #d2d2d2;
 }
 
+@font-face {
+  font-family: "HelveticaWorld";
+  src: url("/fonts/HelveticaWorld.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; /* optional, avoids FOUT */
+}
+
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
