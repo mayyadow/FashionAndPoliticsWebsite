@@ -28,9 +28,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[var(--grey)] text-[var(--black)] min-h-screen">
+      <body className="bg-[var(--grey)] text-[var(--black)] min-h-screen flex flex-col">
         <Navbar />
-        {children}
+
+        {/* Main content grows to take available space */}
+        <main className="flex-1">{children}</main>
+
+        <footer className="flex md:hidden justify-center items-center h-16">
+          instagram @uoftfp
+        </footer>
       </body>
     </html>
   );
