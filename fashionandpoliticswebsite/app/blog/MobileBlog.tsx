@@ -38,10 +38,10 @@ export default function MobileBlog({
           {/* make this dynamic to receive a list of preview */}
           <div className="ml-7 mr-8 mt-5">
             {" "}
+            {/* <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
-            <BlogArticlePreview title={title} author={author} date={date} />
-            <BlogArticlePreview title={title} author={author} date={date} />
+            <BlogArticlePreview title={title} author={author} date={date} /> */}
           </div>
         </div>
       </div>

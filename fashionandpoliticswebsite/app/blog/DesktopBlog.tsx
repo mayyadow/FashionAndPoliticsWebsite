@@ -31,14 +31,23 @@ export default function DesktopBlog({
         />
 
         {/* White border container */}
-        <div className="absolute top-20 left-25 z-10 h-[60%] w-[70%] bg-white border border-black p-2">
-          <div className="w-full h-full bg-[#ffebf7] overflow-y-auto p-5">
+        <div
+          style={{
+            fontFamily: "HelveticaWorld, Helvetica,  Arial, sans-serif",
+          }}
+          className="absolute top-20 left-25 z-10 h-[60%] w-[70%] bg-white border border-black p-2"
+        >
+          {/* <div className="w-full h-full bg-[#ffebf7] overflow-y-auto p-5">
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
+          </div> */}
+
+          <div className="text-9xl w-full h-full overflow-y-auto p-5">
+            COMING SOON...
           </div>
         </div>
       </div>
