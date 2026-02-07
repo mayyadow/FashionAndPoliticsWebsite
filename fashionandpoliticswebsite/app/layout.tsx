@@ -31,11 +31,12 @@ export default function RootLayout({
       <body className="bg-[var(--grey)] text-[var(--black)] min-h-screen flex flex-col">
         <Navbar />
 
-        {/* Main content grows to take available space */}
-        <main className="flex-1">{children}</main>
+        {/* Main content fills the viewport */}
+        <main className="mb-8">{children}</main>
 
-        <footer className="flex md:hidden justify-center items-center h-16">
-          instagram @uoftfp
+        {/* Footer scrolls into view */}
+        <footer className="flex flex-col justify-center items-center md:mt-60 mb-5 text-xs">
+          <div className="md:hidden">instagram @uoftfp</div>
         </footer>
       </body>
     </html>
