@@ -17,13 +17,19 @@ export default function MobileNav() {
 
       {/* Links spaced evenly */}
       <div className="flex-1 flex mx-9 justify-center">
-        <Link href="/" className="hover:text-[#FF1FA9]">
+        <Link href="/" className="hover:text-[#FF1FA9] active:text-[#FF1FA9]">
           HOME
         </Link>
-        <Link href="/about" className="ml-20 hover:text-[#FF1FA9]">
+        <Link
+          href="/about"
+          className="ml-20 hover:text-[#FF1FA9] active:text-[#FF1FA9]"
+        >
           ABOUT
         </Link>
-        <Link href="/blog" className="ml-20 hover:text-[#FF1FA9]">
+        <Link
+          href="/blog"
+          className="ml-20 hover:text-[#FF1FA9] active:text-[#FF1FA9]"
+        >
           BLOG
         </Link>
       </div>

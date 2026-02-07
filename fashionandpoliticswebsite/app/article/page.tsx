@@ -1,4 +1,5 @@
 import ArticleHeader from "@/components/ArticleHeader";
+import { CreditsFooter } from "@/components/CreditsFooter";
 type Props = {
   articleName: string;
   author: string;
@@ -24,6 +25,18 @@ export default function ArticlePage({
           culpa qui officia deserunt mollit anim id est laborum
         </p>
       </div>
+
+      <CreditsFooter
+        credits={[
+          {
+            source:
+              "Anneliese Seubert and Johanna Rhodes by Mikael Jansson (Glamour France, Dec 1991)",
+          },
+          {
+            source: "Naomi Campbell by unknown source",
+          },
+        ]}
+      />
     </>
   );
 }
