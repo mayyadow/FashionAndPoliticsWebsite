@@ -22,7 +22,7 @@ export default function DesktopBlog({
   return (
     <div className="h-screen flex items-start">
       {/* Left: folder + preview */}
-      <div className="relative mt-40 ml-20 z-60">
+      <div className="relative mt-40 ml-20">
         <Image
           src="/images/blog-page/blank-folder.jpg"
           alt="blank page"
