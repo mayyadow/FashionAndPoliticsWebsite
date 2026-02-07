@@ -6,7 +6,7 @@ type Props = {
   date: string;
 };
 export default function ArticlePage({
-  articleName = "This is a normal article title",
+  articleName = "THIS IS AN ARTICLE TITLE!",
   author = "PLACEHOLDER",
   date = "00/00/00",
 }: Props) {
@@ -14,7 +14,10 @@ export default function ArticlePage({
     <>
       <ArticleHeader articleName={articleName} author={author} date={date} />
 
-      <div className="mt-10 mx-10 md:mx-50 px-10 md:px-0">
+      <div
+        className="mt-10 mx-10 md:mx-50 px-10 md:px-0"
+        style={{ fontFamily: "HelveticaWorld, Helvetica,  Arial, sans-serif" }}
+      >
         <p className="break-words">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

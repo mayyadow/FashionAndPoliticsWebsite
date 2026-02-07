@@ -22,7 +22,7 @@ export default function DesktopBlog({
   return (
     <div className="h-screen flex items-start">
       {/* Left: folder + preview */}
-      <div className="relative mt-40 ml-20">
+      <div className="relative mt-40 ml-20 z-60">
         <Image
           src="/images/blog-page/blank-folder.jpg"
           alt="blank page"
@@ -34,8 +34,10 @@ export default function DesktopBlog({
         <div className="absolute top-20 left-25 z-10 h-[60%] w-[70%] bg-white border border-black p-2">
           <div className="w-full h-full bg-[#ffebf7] overflow-y-auto p-5">
             <BlogArticlePreview title={title} author={author} date={date} />
-            <p className="mt-2">Lorem ipsum ...</p>
-            <hr className="border-t-[1px] my-5 border-[#1c1c1c]" />
+            <BlogArticlePreview title={title} author={author} date={date} />
+            <BlogArticlePreview title={title} author={author} date={date} />
+            <BlogArticlePreview title={title} author={author} date={date} />
+            <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
           </div>
         </div>
@@ -44,11 +46,11 @@ export default function DesktopBlog({
       {/* Right: BLOG text */}
       <div className="flex-1 flex justify-end items-start pr-10 w-full">
         <h1
-          className={`${anton.className}  absolute text-white text-9xl mt-20 right-[6%]`}
+          className={`${anton.className}  text-[130px] absolute text-white text-9xl mt-20 right-[4%]`}
         >
           BLOG
         </h1>
-        <div className="absolute top-50 right-[22%] z-20 hidden lg:block">
+        <div className="absolute top-50 right-[20%] z-20 hidden lg:block">
           <Image
             src="/images/blog-page/beautyisintheeyesofthebeholder.jpg"
             alt=""
@@ -57,7 +59,7 @@ export default function DesktopBlog({
           />
         </div>
 
-        <div className="absolute top-80 right-[6%] z-30 hidden lg:block">
+        <div className="absolute top-80 right-[4%] z-30 hidden lg:block">
           <Image
             src="/images/blog-page/viviennewestwoodtartan.jpg"
             alt=""
@@ -66,7 +68,7 @@ export default function DesktopBlog({
           />
         </div>
 
-        <div className="absolute top-160 right-[26%] z-10 hidden lg:block">
+        <div className="absolute top-160 right-[25%] z-10 hidden lg:block">
           <Image
             src="/images/blog-page/flags.jpg"
             alt=""

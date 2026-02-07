@@ -36,7 +36,14 @@ export default function RootLayout({
 
         {/* Footer scrolls into view */}
         <footer className="flex flex-col justify-center items-center md:mt-60 mb-5 text-xs">
-          <div className="md:hidden">instagram @uoftfp</div>
+          <div
+            className="md:hidden "
+            style={{
+              fontFamily: "HelveticaWorld, Helvetica,  Arial, sans-serif",
+            }}
+          >
+            instagram @uoftfp
+          </div>
         </footer>
       </body>
     </html>
