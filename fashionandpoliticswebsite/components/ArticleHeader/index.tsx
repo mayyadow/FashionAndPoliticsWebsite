@@ -17,6 +17,8 @@ export default function Header({ articleName, author, date }: Props) {
   bg-[url('/images/article-page/mobile-article-header.jpg')]
   md:bg-[url('/images/article-page/article-header.jpg')]
   bg-contain bg-center
+
+  h-43 md:h-74
 "
       >
         {/* bg image */}
