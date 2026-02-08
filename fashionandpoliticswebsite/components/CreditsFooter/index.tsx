@@ -7,7 +7,7 @@ export function CreditsFooter({ credits }: { credits?: ImageCredit[] }) {
 
   return (
     <footer
-      className="mb-0 pb-0 mt-15 text-left text-[9px] text-gray-500 w-screen"
+      className="mb-0 pb-0 mt-50 text-left text-[9px] text-gray-500 w-screen"
       style={{ fontFamily: "HelveticaWorld, Helvetica,  Arial, sans-serif" }}
     >
       <hr className="border-gray-400 border-[0.1px] mb-3 w-full" />
