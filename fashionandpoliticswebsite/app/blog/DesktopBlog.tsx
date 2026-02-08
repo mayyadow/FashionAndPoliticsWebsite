@@ -22,7 +22,7 @@ export default function DesktopBlog({
   return (
     <div className="h-screen flex items-start">
       {/* Left: folder + preview */}
-      <div className="relative mt-40 ml-20">
+      <div className="relative mt-40 ml-30">
         <Image
           src="/images/blog-page/blank-folder.jpg"
           alt="blank page"
@@ -59,48 +59,39 @@ export default function DesktopBlog({
         >
           BLOG
         </h1>
-        <div className="absolute top-50 right-[20%] z-20 hidden lg:block">
+        <div className="absolute top-55 right-[18%] z-[-3] hidden lg:block">
           <Image
             src="/images/blog-page/beautyisintheeyesofthebeholder.jpg"
             alt=""
-            width={400}
-            height={400}
+            width={350}
+            height={350}
           />
         </div>
 
-        <div className="absolute top-80 right-[4%] z-30 hidden lg:block">
+        <div className="absolute top-80 right-[4%] z-[-2] hidden lg:block">
           <Image
-            src="/images/blog-page/viviennewestwoodtartan.jpg"
+            src="/images/blog-page/viviennewestwood.jpg"
             alt=""
-            width={310}
-            height={310}
+            width={330}
+            height={330}
           />
         </div>
 
-        <div className="absolute top-160 right-[25%] z-10 hidden lg:block">
+        <div className="absolute top-160 right-[19%] z-[-3] hidden lg:block">
           <Image
             src="/images/blog-page/flags.jpg"
             alt=""
-            width={300}
-            height={300}
+            width={330}
+            height={330}
           />
         </div>
 
-        <div className="absolute top-100 right-[20%] z-40 hidden lg:block">
+        <div className="absolute top-100 right-[18%] z-[-1] hidden lg:block">
           <Image
             src="/images/blog-page/rocky.jpg"
             alt=""
-            width={280}
-            height={280}
-          />
-        </div>
-
-        <div className="absolute bottom-0 right-0 z-50 hidden lg:block">
-          <Image
-            src="/images/monogram.png"
-            alt="fp monogram"
-            width={150}
-            height={150}
+            width={240}
+            height={240}
           />
         </div>
       </div>
