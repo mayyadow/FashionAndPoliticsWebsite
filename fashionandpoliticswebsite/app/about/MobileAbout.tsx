@@ -110,6 +110,18 @@ export default function MobileAbout() {
             width={700}
             height={900}
           />
+          <Image
+            src="/images/about-page/matilda.png"
+            alt="Matilda"
+            width={700}
+            height={900}
+          />
+          <Image
+            src="/images/about-page/maya-grace.png"
+            alt="Maya-Grace"
+            width={700}
+            height={900}
+          />
         </div>
       </div>
     </div>
