@@ -28,23 +28,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[var(--grey)] text-[var(--black)] min-h-screen flex flex-col">
-        <Navbar />
+      <body className="bg-[var(--grey)] text-[var(--black)] m-0 p-0">
+        {/* Navbar removed from layout flow */}
+        <div className="fixed top-0 left-0 w-full z-50">
+          <Navbar />
+        </div>
 
-        {/* Main content fills the viewport */}
-        <main className="mb-8">{children}</main>
-
-        {/* Footer scrolls into view */}
-        <footer className="flex flex-col justify-center items-center md:mt-60 mb-5 text-xs">
-          <div
-            className="md:hidden "
-            style={{
-              fontFamily: "HelveticaWorld, Helvetica,  Arial, sans-serif",
-            }}
-          >
-            instagram @uoftfp
-          </div>
-        </footer>
+        {/* Page content */}
+        {children}
       </body>
     </html>
   );

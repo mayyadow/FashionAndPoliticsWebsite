@@ -16,6 +16,12 @@
   font-display: swap; /* optional, avoids FOUT */
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 
 @theme inline {
   --color-background: var(--background);

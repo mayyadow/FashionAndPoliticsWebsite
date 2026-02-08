@@ -9,7 +9,7 @@ export default function HomePage() {
       <section className="grid gap-10 md:grid-cols-2 items-start">
         <div className="relative h-[70vh] ">
           <Image
-            src="/images/homepage-girl.jpg"
+            src="/images/homepage-girl.png"
             alt="Model"
             width={800}
             height={800}
