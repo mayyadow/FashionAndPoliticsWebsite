@@ -22,7 +22,7 @@ export default function MobileBlog({
   return (
     <>
       <h1
-        className={`${anton.className} text-white text-8xl mt-12 mb-5 mr-15 flex justify-end`}
+        className={`${anton.className} text-white text-8xl mt-20 mb-5 mr-15 flex justify-end`}
       >
         BLOG
       </h1>
@@ -42,6 +42,9 @@ export default function MobileBlog({
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} />
             <BlogArticlePreview title={title} author={author} date={date} /> */}
+            <div className="text-6xl w-full h-full overflow-y-auto p-5">
+              COMING SOON...
+            </div>
           </div>
         </div>
       </div>

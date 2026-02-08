@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function MobileNav() {
   return (
-    <nav className="flex items-center px-4 font-helvetica">
+    <nav className="flex items-center px-4 font-helvetica bg-[#d2d2d2]">
       {/* Monogram on the left */}
       <Link href="/">
         <Image
