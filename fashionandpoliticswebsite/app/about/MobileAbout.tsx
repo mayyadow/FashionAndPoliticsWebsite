@@ -122,6 +122,14 @@ export default function MobileAbout() {
             width={700}
             height={900}
           />
+
+          <Image
+            src="/images/about-page/maya-grace-text.png"
+            alt=""
+            width={700}
+            height={900}
+            className="mb-6"
+          />
         </div>
       </div>
     </div>
