@@ -2,8 +2,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import DesktopAbout from "app/about/DesktopAbout";
-import MobileAbout from "app/about/MobileAbout";
+import DesktopAbout from "./DesktopAbout";
+import MobileAbout from "./MobileAbout";
 
 export default function AboutResponsive() {
   const [isMobile, setIsMobile] = useState(false);
